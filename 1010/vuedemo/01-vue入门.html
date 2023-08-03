@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="vue.js">
+
+    </script>
+    <h1 id="name">{{name}}</h1>
+    <div id="age">
+        {{age}}
+    </div>
+    <script>
+        new Vue({
+            el: '#name',
+            data: {
+                name: '张三'
+            },
+            el: '#age',
+            data: {
+                age: 20
+            }
+        })
+    </script>
+</body>
+
+</html>

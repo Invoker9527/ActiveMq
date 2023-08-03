@@ -1,0 +1,11 @@
+<script>
+    //定义对象
+    let user = { "name": "lucy", "age": 20 };
+    //传统从对象里面取值
+    let name1 = user.name;
+    let age1 = user.age;
+    console.log(name1 + "==" + age1)
+    // es6写法 注意：结构的变量必须是user中的属性
+    let { name, age } = user;
+    console.log(name1 + "**" + age1)
+</script>

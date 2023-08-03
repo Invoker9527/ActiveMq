@@ -1,0 +1,21 @@
+<script>
+    //模版字符串相当于加强版的字符串，用反引号`除了作为普通字符串，还可以用来定义多行字符串没还可以再字符串中加入变量和表达式
+    // 1.多行字符串,使用`符号实现换行
+    let string1 = `Hey,
+    can you stop angry now`;
+    console.log(string1);
+
+    //2.字符串插入变量和表达式。变量名卸载${}，${}中可以放入javascript表达式。
+    //在`符号里使用表达式获取变量值
+    let name = "MIke";
+    let age = 27;
+    let info = `My Name is ${name},I am ${age + 1} years old next year.`
+
+    console.log(info);//My Name is MIke,I am 28 years old next year.
+    //在`符号中调用方法
+    function f1() {
+        return "hello f1";
+    }
+    let str3 = `demo, ${f1()}`
+    console.log(str3);
+</script>
